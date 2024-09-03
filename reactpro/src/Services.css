@@ -1,13 +1,25 @@
-h1{
+#pl,#ji,#mb,#ls{
     position: relative;
     top: 100px;
+    left: 570px;
+    bottom: 30px;
+    display: grid;
 }
-table{
+#lof{
+position: relative;
+top: 100px;
+left: 520px;
+color: red;
+}
+h1{
     position: relative;
-    top: 250px;
-    border: 1px solid black;
-
+    /* margin: auto; */
+left: 570px;
 }
-td{
-    border: 1px asolid black;
+span{
+    color: blue;
+}
+#ly{
+    position: relative;
+    left: 570px;
 }

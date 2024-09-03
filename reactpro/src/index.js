@@ -1,4 +1,5 @@
 import React from 'react';
+// import Api from './Api';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +12,8 @@ import Login from './Login';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    {/* <Api /> */}
+    <Router> 
      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +24,6 @@ root.render(
       </Routes>
     </Router> 
   </React.StrictMode>
-);
+)
 
 reportWebVitals();
