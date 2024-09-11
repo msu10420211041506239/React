@@ -1,0 +1,65 @@
+/* Basic styling for inputs and text */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .jkl {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #pl, #ji, #mb, #ls {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .jkl {
+      width: 80%;
+      font-size: 0.9em;
+    }
+  
+    #pl, #ji, #mb, #ls {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .jkl {
+      width: 100%;
+      font-size: 0.8em;
+    }
+  
+    #pl, #ji, #mb, #ls {
+      font-size: 0.9em;
+    }
+  }
+  
+  #lof, #ly {
+    text-align: center;
+    color: red;
+  }
+  

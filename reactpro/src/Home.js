@@ -1,28 +1,19 @@
 import './Home.css';
 import Data from './data.json'
 const Home = () => {
-  const handlePaytmClick = () => {
-   
-    const paytmUrl = 'https://securegw.paytm.in/theia/processTransaction'; 
-
-    const parameters = {
-      MID: 'YOUR_MID', 
-      ORDER_ID: 'ORDER_ID', 
-      TXN_AMOUNT: '10.00', 
-      
-    };
- const queryString = new URLSearchParams(parameters).toString();
- window.location.href = `${paytmUrl}${queryString}`;
-  };
+  function Purchase(){
+    alert("Give your address in ContactPage")
+  }
   return (   
     <div id="mu">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       {Data.map((item,index)=>(
         <div id="blow">
           <img src={item.image} alt="" id='jo'></img>
-          <div id="li"><h1>{item.Product}</h1>
-          <h1>{item.Rating}</h1>
-          <button id='add' onClick={handlePaytmClick}>Buy</button>
-          </div></div> 
+          <h3>{item.Product}</h3>
+          <h3>{item.Rate}</h3>
+          <button id="add" onClick={Purchase}>Buy Now</button>         
+           </div>
       ))}
  <Images />;</div>
 )}

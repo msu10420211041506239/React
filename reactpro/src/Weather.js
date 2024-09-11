@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Services.css'
-const Services = () => {
+import './Weather.css'
+const Weather = () => {
   const [Data, setData] = useState('');
   const [weatherData, setWeatherdata] = useState({
     data: {},
@@ -56,5 +56,5 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Weather;
 
